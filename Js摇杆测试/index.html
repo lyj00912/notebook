@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hi</title>
+        <style>
+            html,body{
+                height:100%;
+                border:0;
+                margin:0;
+                padding:0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="zone_joystick"></div>
+        <script src="./nipplejs.js"></script>
+        <script>
+            var size = document.body.clientHeight / 2;
+            var options = {
+                zone: document.getElementById('zone_joystick'),
+                size: size,
+                mode: 'static',
+                color:"#000000",
+                position: {
+                    left: '15%',
+                    top: '60%'
+                }
+            };
+            var manager = nipplejs.create(options);
+            manager.on("start end",function(evt,data){
+                if(data.direction){
+                    console.log(data.direction.angle);
+                }
+            });
+            manager.on("move",function(evt,data){
+                if(data.direction){
+                    console.log(data.direction.angle);
+                }
+            });
+        </script>
+    </body>
+</html>

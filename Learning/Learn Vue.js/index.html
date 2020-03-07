@@ -10,12 +10,18 @@
             {{ message }}
         </div>
         <script>
-            var app = new Vue({
+            var vm = new Vue({
                 el: "#app",
                 data: {
                     message: "Hello Vue.js!"
                 }
             });
+
+            vm.$watch("message", function(newVal, oldVal){
+                console.log("alert:message has been changed!!!    newVal:" + newVal + "   oldVal:" + oldVal);
+            });
+
+            vm.$data.message = "changed!";
         </script>
     </body>
 </html>

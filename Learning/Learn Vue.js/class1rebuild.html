@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>class1rebuild</title>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            {{ variable }}
+        </div>
+        <script>
+            var vm = new Vue({
+                el: "#app",
+                data: {
+                    variable : "before change"
+                }
+            });
+            vm.$watch("variable",function(newVal, oldVal){
+                console.log("newVal:" + newVal + "  oldVal:" + oldVal);
+            });
+            vm.$data.variable = "changed!";
+        </script>
+    </body>
+</html>

@@ -1,17 +1,3 @@
-P1 课程简介、C#语言简介、开发环境准备
-
-	配置Visual Studio环境
-
-P2 初识各类应用程序
-
-	学会用Console写Hello World
-
-	学会用WPF写Hello World
-
-	学会用WinForms写Hello World
-
-	了解用其他7种技术来编写Hello World的方法
-
 P3 初识类和名称空间
 
 	什么是（类库、名称空间、类、方法）

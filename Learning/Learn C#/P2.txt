@@ -1,9 +1,0 @@
-P2 初识各类应用程序
-
-	学会用Console写Hello World
-
-	学会用WPF写Hello World
-
-	学会用WinForms写Hello World
-
-	了解用其他7种技术来编写Hello World的方法
